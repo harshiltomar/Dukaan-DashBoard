@@ -5,36 +5,28 @@ import { faSortDown } from "@fortawesome/free-solid-svg-icons";
 
 const TransactionCard = () => {
   return (
-    <div className="bg-grey-500 ml-96">
-      <div className="flex">
-        <h1 className="m-10 font-semibold text-3xl">Overview</h1>
-        <div className="ml-auto mr-16 rounder-lg">
-          <h1 className="m-10 font-semibold text-xl bg-white px-4 py-3 font-gray border">
-            Last Month
-            <FontAwesomeIcon
-              icon={faSortDown}
-              className="ml-2 text-gray-500 pb-1"
-            />
-          </h1>
+    <div className="ml-60 mr-10 overflow-x-hidden bg-zinc-100">
+      <div className="flex my-10 items-center">
+        <h1 className="m-10 mb-4 font-semibold text-2xl pb-2">Overview</h1>
+        <h1 className=" ml-auto mt-4 mr-10 rounded-lg font-semibold bg-white px-3 py-2 font-gray border">
+          Last Month
+          <FontAwesomeIcon
+            icon={faSortDown}
+            className="ml-2 text-gray-500 pb-1"
+          />
+        </h1>
+      </div>
+      <div className="flex m-10 -mt-8">
+        <div className="bg-white p-5 pr-96 flex-col mr-10 shadow-md mb-4 rounded-lg">
+          <h1>Online Orders</h1>
+          <h1 className="text-4xl font-semibold mt-4">231</h1>
+        </div>
+        <div className="bg-white p-5 pr-60 flex-col shadow-md mb-4 rounded-lg">
+          <h1 className="">Amount recieved</h1>
+          <h1 className="text-4xl font-semibold mt-4">₹23,92,312.19</h1>
         </div>
       </div>
-      <div className="flex m-10">
-        <div
-          className="bg-white p-5 flex-col mr-10 shadow-md mb-4 rounded-lg"
-          style={{ paddingRight: "32rem" }}
-        >
-          <h1 className="text-2xl">Online Orders</h1>
-          <h1 className="text-5xl font-semibold mt-4">231</h1>
-        </div>
-        <div
-          className="bg-white p-5 flex-col shadow-md mb-4 rounded-lg"
-          style={{ paddingRight: "32rem" }}
-        >
-          <h1 className="text-2xl">Amount recieved</h1>
-          <h1 className="text-5xl font-semibold mt-4">₹23,92,312.19</h1>
-        </div>
-      </div>
-      <h1 className="m-10 font-semibold text-3xl">Transactions | This Month</h1>
+      <h1 className="m-10 font-semibold text-2xl">Transactions | This Month</h1>
       <TransactionSubinfo />
     </div>
   );

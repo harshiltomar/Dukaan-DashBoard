@@ -4,7 +4,7 @@ import TransactionCard from "./TransactionCard";
 
 const MainBody = () => {
   return (
-    <div className="bg-zinc-50 h-screen">
+    <div className="bg-zinc-100 h-full">
       <Header />
       <TransactionCard />
     </div>

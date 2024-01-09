@@ -4,9 +4,11 @@ import SideBar from "./SideBar";
 
 const Dashboard = () => {
   return (
-    <div className="flex">
-      <SideBar />
-      <MainBody />
+    <div className="flex h-full">
+      <div className="bg-zinc-100 flex">
+        <SideBar />
+        <MainBody />
+      </div>
     </div>
   );
 };
